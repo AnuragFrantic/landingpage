@@ -28,19 +28,63 @@ body {
   animation: blink 1s linear infinite;
 }
 
-.mainsection {
+/* .mainsection {
   height: 87vh;
+} */
+
+.buttonparent {
+  bottom: 3rem;
+  left: 0;
 }
 
-.whatsappicon {
-  position: absolute;
-  bottom: 20px;
-  right: 20px;
+.logo img {
+  height: 80px;
 }
 
-.telegramicon {
-  position: absolute;
+.headerimg img {
+  height: 30px !important;
+}
 
-  bottom: 20px;
-  left: 20px;
+.mainsection img {
+  height: 30px;
+  border-radius: 50%;
+}
+
+@media (min-width:768px) {
+  .mainsection {
+    background-image: url("./assets/legal99.png");
+    background-size: 100% 100%;
+    height: 100%;
+    min-height: 800px;
+    /* background-position: 100% 100%; */
+    background-repeat: no-repeat;
+  }
+
+}
+
+
+@media (max-width:768px) {
+  .mainsection {
+    background-image: url("./assets/mobile-banner.jpg");
+    background-size: 100% 100%;
+    min-height: 84.45vh;
+    /* background-position: 100% 100%; */
+    background-repeat: no-repeat;
+  }
+
+  .mainsection a,
+  .navbar a {
+    font-size: 14px;
+  }
+
+  .mainsection img,
+  .headerimg img {
+    height: 30px !important;
+
+  }
+
+  .logo img {
+    height: 50px !important;
+  }
+
 }
